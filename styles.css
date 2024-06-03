@@ -36,8 +36,9 @@ h1{
 }
 
 hr{
-    width:80%;
-    margin: auto;
+    width:100%;
+    opacity: 0.3;
+    /* margin: auto; */
 }
 
 
