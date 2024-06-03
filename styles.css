@@ -40,7 +40,9 @@ hr{
     opacity: 0.3;
     /* margin: auto; */
 }
-
+p{
+    margin: 0;
+}
 
 /* details[open] summary ~ * {
     opacity:1;
