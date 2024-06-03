@@ -21,8 +21,19 @@
         </section> 
 
 
-        <section id="hobbies" class="lightgrey flex flex-wrap sm:flex-nowrap  m-auto max-w-screen-xl">
-            <div class="p-10 grow text-left min-w-[300px] self- md:order-1">
+        <section class="lightgrey flex flex-wrap sm:flex-nowrap  m-auto max-w-screen-xl">
+            <div class="p-10 grow text-left min-w-[350px] self- md:order-1">
+                
+                <p class="text-white whitespace-pre-line text-left">
+                Born in Napier, NZ
+
+                Studied at the University of Auckland,
+                <i>Bsc. Major in Computer Science</i>
+                
+                Moved to Sydney Feb 2024
+
+
+                </p>
                 <h1 class="text-white text-5xl ">Hobbies</h1>
                 <ul class="text-white mt-10 leading-8">
                     <li>- Gym/Sports</li>
@@ -30,13 +41,18 @@
                     <li>- Rugby</li>
                     <li>- Winter</li>
                     <li>- Travel</li>
+                    <li>- Beach</li>
+                    <li>- Korean BBQ</li>
+
+
+
                 </ul>
             </div>
             <div class="p-10 pr-0 flex flex-wrap gap-x-5 gap-y-5 content-center justify-center ">
                 <img src="img/taniwhas.jpg" class="h-48 hover:h-96 rounded-md object-cover " >
-                <img src="img/one-piece.jpg" class="h-28 hover:h-48 rounded-md object-cover " >
-                <img src="img/yuuki-yuuki_2000x1500.jpg" class="h-48 hover:h-80 rounded-md object-cover " >
                 <img src="img/japan_2000x1500.jpg" class="h-44 hover:h-96 rounded-md object-cover  " >
+                <img src="img/one-piece.jpg" class="h-28 hover:h-40 rounded-md object-cover " >
+                <img src="img/yuuki-yuuki_2000x1500.jpg" class="h-48 hover:h-80 rounded-md object-cover " >
                 <img src="img/nerd_2000x1500.jpg" class="h-64 hover:h-96 rounded-md object-cover  " >
             </div>
 
@@ -86,29 +102,94 @@
                     <li>Leadership</li>
                     <li>Hard Working</li>
                     <li>Nice Smile :)</li>
-                    <li>Building Snowmen <span class="text-4xl top-2 relative">☃</span></li>   
+                    <!-- <li>Building Snowmen <span class="text-4xl top-2 relative">☃</span></li>    -->
                 </ul>
             </div>
         </section>
-        <section id="projects" class=" flex justify-between m-auto max-w-screen-lg">
-            <div class="p-10 grow">
-                <img src="img/manual_home.png" class="size-56 object-cover rounded-md" >
-                <img src="img/manual_nav.png" class="size-56 object-cover rounded-md">
-                <img src="img/manual_page.png" class="size-56 object-cover rounded-md">
-                <img src="img/manual_search.png" class="size-56 object-cover rounded-md">
-                <!-- <img src="img/nerd_2000x1500.jpg" class="h-64 rounded-md"> -->
+        <section id="projects" class="m-auto max-w-screen-lg">
+            <h1 class="text-white text-5xl text-center p-10">Previous Work</h1>
+            <h2 class="text-center text-white text-2xl w-full mt-20 mb-5 ">Online Manual</h2>
+            <div class="p-10 flex flex-wrap justify-center gap-2 ">
+                <button class='' onclick="openClose(this);">
+                    <img src="img/manual_home.png" class="size-36 hover:size-40 rounded-md object-cover">
+                    <dialog class="w-[70%]">
+                        <img src="img/manual_home.png" class="size-fit rounded-md" >
+                    </dialog>
+                </button>
+                <button onclick="openClose(this);">
+                    <img src="img/manual_nav.png" class="size-36 hover:size-40 rounded-md object-cover">
+                    <dialog class="w-[70%]">
+                        <img src="img/manual_nav.png" class="size-fit rounded-md" >
+                    </dialog>
+                </button>
+                <button onclick="openClose(this);">
+                    <img src="img/manual_page.png" class="size-36 hover:size-40 rounded-md object-cover">
+                    <dialog class="w-[70%]">
+                        <img src="img/manual_page.png" class="size-fit rounded-md" >
+                    </dialog>
+                </button>
+                <button onclick="openClose(this);">
+                    <img src="img/manual_search.png" class="size-36 hover:size-40 rounded-md object-cover" />
+                    <dialog class="w-[70%]">
+                        <img src="img/manual_search.png" class="size-fit rounded-md" />    
+                        </dialog>
+                </button>
+                <p class="basis-full whitespace-pre pl-20 sm:pl-0 text-white">
+                    An example of a solo project I managed for eTAP
+                    
+                    Description: An online manual and resource for users
+
+                    Designed, coded, managed and maintained.
+
+                    Made by me, with PHP, Javascript, HTML, css.
+
+                    Included a search which I created with a web scraper made from scratch in PHP.
+
+                </p>
             </div>
-            <div class="p-10">
-                <h1 class="text-white text-5xl text-right">Previous Work</h1>
+            <hr>
+            <div class="p-10 flex flex-wrap justify-center gap-2 ">
+                <h2 class="text-center text-white text-2xl w-full mt-20 mb-5 ">Porfolio</h2>
+                <p class="basis-full whitespace-pre pl-20 sm:pl-0 text-white">
+                    A simple porfolio
+                    
+                    Description: An introduction to me
+    
+                </p>
+
             </div>
+            <hr>
         </section>
-        <section id="contact" class=" flex justify-between m-auto max-w-screen-lg">
-            <div class="p-10">
-                <h1 class="text-white text-5xl text-right">Contact</h1>
-            </div>
-            <div class="p-10 grow">
+        <section id="contact" class=" m-auto mt-10 max-w-screen-lg">
+            <h1 class="text-white text-5xl text-center">Contact</h1>
+            <div class="p-10 text-white ">
+                <a class='m-5' target="_blank" href="https://docs.google.com/document/d/1t-L1kLwA_UwLaIoZPnTVGk24AytOuM2eGSqxzg9vD0U/export?format=pdf">
+                    <button class="bg-white text-black font-bold w-8 rounded-sm">CV</button>
+                </a>
+                <a href="mailto:james.oliver.sjc@gmail.com" >
+                    <svg class='m-4' xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" >
+                        <path fill="#FFF" fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" />
+                    </svg>
+                </a>            
+                <a  target="_blank" href="https://github.com/JamesOliver00/">
+                    <svg  class='m-5' height="32" height="32" fill="currentColor" viewBox="0 0 16 16" version="1.1" >
+                        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+                    </svg>
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/james-oliver00">
+                    <svg class='m-5' width="32" height="32" fill='currentColor' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  >
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
+                </a>
             </div>
         </section> 
     </main>
 </body>
+<script>
+function openClose(ele){
+    let dialog = ele.querySelector('dialog');
+    dialog.open ? dialog.close() : dialog.showModal();
+    return;
+}
+</script>
 </html>
